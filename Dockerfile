@@ -1,6 +1,6 @@
-FROM python:3.8
+FROM python:3.9-slim
 WORKDIR /app
 COPY api/ .
 RUN pip install flask bcrypt
 EXPOSE 5000
-CMD [&quot;python&quot;, &quot;app.py&quot;]
+CMD ["python", "app.py"]
